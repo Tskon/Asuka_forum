@@ -1,4 +1,8 @@
-//@import "variables";
-body{
-  background-color: green;
+@import "variables";
+@import "header";
+
+body > * {
+  width: $main-width;
+  margin: 0 auto;
+  display: block;
 }
