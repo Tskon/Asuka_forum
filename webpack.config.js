@@ -14,7 +14,7 @@ module.exports = {
         publicPath: './'
     },
     resolve: {
-        modules: [ path.join(__dirname, "src"), "node_modules" ]
+        modules: [ path.resolve(__dirname, "src"), "node_modules" ]
     },
     devtool: 'inline-source-map',
     module: {
@@ -43,6 +43,13 @@ module.exports = {
                     },
                     'sass-loader'
                 ]
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                }
             }
         ]
     },
@@ -64,7 +71,6 @@ module.exports = {
     ,
     stats: {
         colors: true,
-        chunks:
-            true
+        chunks: true
     }
 };
