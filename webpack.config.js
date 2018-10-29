@@ -44,30 +44,27 @@ module.exports = {
                     'sass-loader'
                 ]
             }
-    ]
-},
-plugins: [
-    new CleanWebpackPlugin([ 'public' ]),
-    new HtmlWebpackPlugin({
-        template: './src/index.html',
-        filename: 'index.html',
-    }),
-    new MiniCssExtractPlugin({
-        filename: "css/[name].css",
-        chunkFilename: "css/[id].css"
-    })
-],
-    optimization
-:
-{
-    minimizer: [ new OptimizeCSSAssetsPlugin({}) ]
-}
-,
-stats: {
-    colors: true,
-        chunks
-:
-    true
-}
-}
-;
+        ]
+    },
+    plugins: [
+        new CleanWebpackPlugin([ 'public' ]),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            filename: 'index.html',
+        }),
+        new MiniCssExtractPlugin({
+            filename: "css/[name].css",
+            chunkFilename: "css/[id].css"
+        })
+    ],
+    optimization:
+        {
+            minimizer: [ new OptimizeCSSAssetsPlugin({}) ]
+        }
+    ,
+    stats: {
+        colors: true,
+        chunks:
+            true
+    }
+};
