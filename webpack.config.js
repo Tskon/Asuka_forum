@@ -1,8 +1,9 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -54,7 +55,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin([ 'public' ]),
+        // new CleanWebpackPlugin([ 'public' ]),
+        new CopyWebpackPlugin([ { from: 'src/img/', to: 'img/',toType: 'dir'} ], {/*options*/}),
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: 'index.html',
