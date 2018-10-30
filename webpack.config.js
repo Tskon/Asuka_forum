@@ -11,7 +11,7 @@ module.exports = {
     output: {
         filename: 'js/[name].js',
         path: path.resolve(__dirname, 'public'),
-        publicPath: './'
+        // publicPath: './'
     },
     resolve: {
         modules: [ path.resolve(__dirname, "src"), "node_modules" ]
@@ -30,7 +30,7 @@ module.exports = {
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
-                        options: {}
+                        options: {publicPath: '../'}
                     },
                     'css-loader',
                     {
