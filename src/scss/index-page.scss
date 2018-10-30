@@ -1,0 +1,25 @@
+.indexPage{
+  padding-top: 15px;
+}
+
+.news__previewImg {
+  display: inline;
+  img {
+    height: 100%;
+    max-height: 350px;
+    border-right: 10px solid $orange;
+    position: relative;
+    // TODO понять почему не отображается треугольник
+    &:after{
+      content: '111';
+      display: block;
+      position: absolute;
+      border: 20px solid transparent;
+      border-left: 20px solid $orange;
+      width: 0;
+      height: 0;
+      right: -40px;
+      //top: calc(50% - 20px);
+    }
+  }
+}
