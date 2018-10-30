@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta charset="UTF-8">
   <title>Title</title>
 </head>
 <body>
-<header class="header">
-  <div class="logo"><span>As</span><span class="title">Asuka</span></div>
+<div class="headerWrapper">
+  <header class="header">
+    <div class="logo">
+      <div class="logo__img">&nbsp;</div>
+      <span class="logo__title">Asuka</span></div>
 
-  <div class="search">
-    <input type="text">
-  </div>
-  <nav>Меню</nav>
+    <div class="search">
+      <input type="text" placeholder="Поиск...">
+    </div>
+    <nav class="mainMenu">
+      <ul>
+        <li class="active">Главная</li>
+        <li>Вербовочный пункт</li>
+        <li>Форум</li>
+      </ul>
+    </nav>
 
-</header>
-<script src="js/main.js"></script>
+  </header>
+</div>
 </body>
 </html>
