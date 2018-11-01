@@ -9,7 +9,7 @@
     max-height: 350px;
     border-right: 10px solid $orange;
     position: relative;
-    // TODO понять почему не отображается треугольник
+    // TODO понять почему не отображается треугольник (может дело в img?)
     &:after{
       content: '111';
       display: block;
@@ -19,7 +19,7 @@
       width: 0;
       height: 0;
       right: -40px;
-      //top: calc(50% - 20px);
+      top: calc(50% - 20px);
     }
   }
 }
