@@ -43,6 +43,27 @@
   padding: 30px 10px 30px 30px;
 }
 
+.contentBlocks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.contentBlocks__block{
+  width: calc(50% - 5px);
+  background-color: $dark-grey;
+  color: $white;
+  padding: 15px;
+  margin-bottom: 10px;
+  h2{
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px $orange;
+    text-align: center;
+  }
+}
+
 @media all and (max-width: 750px){
   .news{
     flex-direction: column;
@@ -65,5 +86,12 @@
   }
   .news__description{
     padding: 30px 10px 30px 10px;
+  }
+  .contentBlocks{
+    flex-direction: column;
+  }
+  .contentBlocks__block{
+    width: 100%;
+    padding: 10px;
   }
 }
