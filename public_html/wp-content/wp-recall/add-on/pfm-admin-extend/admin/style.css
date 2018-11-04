@@ -1,0 +1,29 @@
+.column-user_id,
+.column-topic_status,
+.column-post_status,
+.column-post_count, 
+.column-topic_date,
+.column-post_date,
+.primeforum_page_pfm-reply .column-topic_name,
+.primeforum_page_pfm-reply .column-forum_id {
+        width: 10%;
+}
+.primeforum_page_pfm-reply .column-user_id {
+    width: 15%;
+}
+.column-forum_id {
+    width: 15%;
+}
+.column-user_id img {
+    float:left;
+    margin-right: 10px;
+}
+
+.need-approve th.check-column {
+    border-left: 4px solid #d54e21;
+}
+
+.need-approve td, 
+.need-approve th {
+    background-color: #fef7f1;
+}

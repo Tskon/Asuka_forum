@@ -1,0 +1,7 @@
+Name: PFM Admin Extend;
+Version: 1.4.1;
+Description: Дополнение для Wp-Recall, расширяющее админку PrimeForum;
+Support Core: 16.8.8;
+Author: Preci;
+Author Uri: https://codeseller.ru/author/preci/;
+Add-on Uri: https://codeseller.ru/;

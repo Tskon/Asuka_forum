@@ -1,0 +1,971 @@
+# Translation of Plugins - User Role Editor - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - User Role Editor - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-06-24 01:29:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - User Role Editor - Stable (latest release)\n"
+
+#: includes/classes/user-role-editor.php:681
+#: includes/classes/user-role-editor.php:728
+msgid "No"
+msgstr "Нет"
+
+#: includes/classes/user-role-editor.php:680
+#: includes/classes/user-role-editor.php:727
+msgid "Yes"
+msgstr "Да"
+
+#: includes/settings-template.php:43
+msgid "Tools"
+msgstr "Инструменты"
+
+#: includes/classes/view.php:303
+msgid "Total"
+msgstr "Всего"
+
+#: includes/classes/user-role-editor.php:285
+msgid "To:"
+msgstr "Кому:"
+
+#: includes/classes/user-role-editor.php:679
+#: includes/classes/user-role-editor.php:726
+msgid "Confirm"
+msgstr "Подтвердить"
+
+#: includes/classes/view.php:303
+msgid "Group"
+msgstr "Группа"
+
+#: includes/classes/user-role-editor.php:730
+msgid "DANGER!"
+msgstr "ОПАСНОСТЬ!"
+
+#: includes/classes/view.php:322
+msgid "Columns:"
+msgstr "Столбцы:"
+
+#: includes/settings-template.php:107
+msgid "columns"
+msgstr "столбцы"
+
+#: includes/settings-template.php:101
+msgid "Show capabilities in"
+msgstr "Показать возможности в"
+
+#: includes/classes/view.php:303
+msgid "Granted"
+msgstr "Разрешено"
+
+#: includes/classes/view.php:319
+msgid "Granted Only"
+msgstr "Разрешено только"
+
+#: includes/classes/user-view.php:61
+msgid "Switch&nbsp;To"
+msgstr "Переключить&nbsp;на"
+
+#: includes/classes/tools.php:32
+msgid "WARNING!"
+msgstr "ПРЕДУПРЕЖДЕНИЕ!"
+
+#: includes/classes/capabilities-groups-manager.php:123
+msgid "Deprecated"
+msgstr "Устаревшие"
+
+#: includes/classes/grant-roles.php:153 includes/classes/grant-roles.php:199
+msgid "Not enough permissions"
+msgstr "Недостаточно разрешений"
+
+#: includes/classes/grant-roles.php:212
+msgid "Requested user does not exist"
+msgstr "Запрошенный пользователь не существует"
+
+#: includes/classes/role-additional-options.php:69
+msgid "Hide admin bar"
+msgstr "Скрыть панель администратора"
+
+#: includes/classes/role-additional-options.php:121
+msgid "Additional Options"
+msgstr "Дополнительные настройки"
+
+#: includes/classes/screen-help.php:25 includes/settings-template.php:87
+msgid "Confirm role update"
+msgstr "Подтвердите обновление роли"
+
+#: includes/classes/view.php:273
+msgid "Working..."
+msgstr "В работе..."
+
+#: includes/classes/grant-roles.php:286
+msgid "Grant Roles"
+msgstr "Предоставить роли"
+
+#: includes/classes/grant-roles.php:167
+msgid "Invalid primary role"
+msgstr "Недействительная первичная роль"
+
+#: includes/classes/capability.php:186 includes/classes/capability.php:191
+msgid "There are no capabilities available for deletion!"
+msgstr "Для удаления нет возможностей!"
+
+#: includes/classes/capability.php:47
+msgid "Error: this capability is used internally by WordPress"
+msgstr "Ошибка: эта возможность используется внутри WordPress"
+
+#: includes/classes/capability.php:200
+msgid "capabilities were removed successfully"
+msgstr "возможности успешно удалены"
+
+#: includes/classes/grant-roles.php:159
+msgid "Can not edit user or invalid data at the users list"
+msgstr "Невозможно редактировать пользователя или неверные данные в списке пользователей"
+
+#: includes/classes/grant-roles.php:180
+msgid "Invalid data at the other roles list"
+msgstr "Недопустимые данные в списке других ролей"
+
+#: includes/classes/grant-roles.php:189
+msgid "Roles were granted to users successfully"
+msgstr "Роли были успешно предоставлены пользователям"
+
+#: includes/classes/grant-roles.php:206
+msgid "Wrong request, valid user ID was missed"
+msgstr "Неправильный запрос, действующий ID пользователя был пропущен"
+
+#: includes/classes/grant-roles.php:322
+msgid "Grant roles to selected users"
+msgstr "Предоставить роли выбранным пользователям"
+
+#: includes/classes/grant-roles.php:323
+msgid "Select users to which you wish to grant roles!"
+msgstr "Выберите пользователей, которым вы хотите предоставить роли!"
+
+#: includes/classes/grant-roles.php:324
+msgid "Select role(s) which you wish to grant!"
+msgstr "Выберите роли, которые вы хотите предоставить!"
+
+#: includes/classes/screen-help.php:26
+msgid "Show confirmation dialog before save changes made to a current role."
+msgstr "Показывать диалоговое окно подтверждения перед сохранением изменений, внесенных в текущую роль."
+
+#: includes/classes/tools.php:34
+msgid "Resetting will setup default user roles and capabilities from WordPress core."
+msgstr "Сброс будет устанавливать роли и возможности пользователя по умолчанию из ядра WordPress."
+
+#: includes/classes/tools.php:50
+msgid "Reset Roles to its original state"
+msgstr "Сброс ролей в исходное состояние"
+
+#: includes/classes/user-role-editor.php:731
+msgid " Resetting will restore default user roles and capabilities from WordPress core."
+msgstr "Сброс восстановит роли и возможности пользователя по умолчанию из ядра WordPress."
+
+#: includes/classes/tools.php:45
+msgid "If checked, then apply action to ALL sites. Main site only is affected in other case."
+msgstr "Если этот флажок установлен, применится действие ко всем сайтам. В другом случае затрагивается только основной сайт."
+
+#: includes/classes/tools.php:35
+msgid "If any plugins (such as WooCommerce, S2Member and many others) have changed user roles and capabilities during installation, those changes will be LOST!"
+msgstr "Если какие-либо плагины (такие как WooCommerce, S2Member и многие другие) изменили роли и возможности пользователей во время установки, эти изменения будут ПОТЕРЯНЫ!"
+
+#: includes/classes/user-role-editor.php:732
+msgid "If any plugins (such as WooCommerce, S2Member and many others) have changed user roles and capabilities during installation, all those changes will be LOST!"
+msgstr "Если какие-либо плагины (такие как WooCommerce, S2Member и многие другие) изменили роли и возможности пользователей во время установки, все эти изменения будут ПОТЕРЯНЫ!"
+
+#: includes/classes/settings.php:151
+msgid "Tools: Reset: User Roles were initialized"
+msgstr "Инструменты: Сброс: роли пользователей были инициализированы"
+
+#: includes/classes/tools.php:36
+msgid "For more information on how to undo undesired changes and restore plugins capabilities in case you lost them by mistake go to: "
+msgstr "Для получения дополнительной информации о том, как отменить нежелательные изменения и восстановить возможности плагинов в случае, если вы потеряли их по ошибке, перейдите по ссылке: "
+
+#: includes/classes/grant-roles.php:235
+msgid "Primary Role: "
+msgstr "Первичная роль: "
+
+#: includes/classes/grant-roles.php:255
+msgid "Other Roles: "
+msgstr "Другие роли: "
+
+#: includes/classes/capabilities-groups-manager.php:117
+msgid "Users"
+msgstr "Пользователи"
+
+#: includes/classes/capabilities-groups-manager.php:116
+msgid "Plugins"
+msgstr "Плагины"
+
+#: includes/classes/capabilities-groups-manager.php:115
+msgid "Pages"
+msgstr "Страницы"
+
+#: includes/classes/capabilities-groups-manager.php:113
+msgid "Themes"
+msgstr "Темы"
+
+#: includes/classes/capabilities-groups-manager.php:110
+msgid "All"
+msgstr "Все"
+
+#: includes/classes/capabilities-groups-manager.php:90
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: includes/classes/capabilities-groups-manager.php:114
+msgid "Posts"
+msgstr "Записи"
+
+#: includes/classes/capabilities-groups-manager.php:91
+#: includes/classes/capabilities-groups-manager.php:111
+msgid "Core"
+msgstr "Ядро"
+
+#: includes/classes/capabilities-groups-manager.php:44
+msgid "Custom Post Types"
+msgstr "Пользовательские типы записей"
+
+#: includes/classes/capabilities-groups-manager.php:112
+#: includes/classes/user-role-editor.php:529 includes/settings-template.php:21
+msgid "General"
+msgstr "Общие"
+
+#: includes/classes/user-role-editor.php:535 includes/settings-template.php:27
+msgid "Additional Modules"
+msgstr "Дополнительные модули"
+
+#: includes/classes/capabilities-groups-manager.php:121
+#: includes/classes/user-role-editor.php:547 includes/settings-template.php:37
+msgid "Multisite"
+msgstr "Многосайтовые"
+
+#: includes/settings-template.php:47
+msgid "About"
+msgstr "О плагине"
+
+#: includes/classes/screen-help.php:15 includes/settings-template.php:63
+msgid "Show Administrator role at User Role Editor"
+msgstr "Отобразить роль Администратор в Редакторе ролей пользователей"
+
+#: includes/classes/screen-help.php:18 includes/settings-template.php:71
+msgid "Show capabilities in the human readable form"
+msgstr "Показ прав доступа в читабельной форме"
+
+#: includes/classes/role-view.php:374 includes/classes/screen-help.php:21
+#: includes/classes/user-view.php:165 includes/settings-template.php:79
+msgid "Show deprecated capabilities"
+msgstr "Показать устаревшие разрешения"
+
+#: includes/classes/screen-help.php:27 includes/settings-template.php:95
+msgid "Edit user capabilities"
+msgstr "Изменять права пользователя"
+
+#: includes/settings-template.php:121 includes/settings-template.php:157
+#: includes/settings-template.php:189 includes/settings-template.php:221
+msgid "Save"
+msgstr "Сохранить"
+
+#: includes/classes/screen-help.php:47 includes/settings-template.php:142
+msgid "Count users without role"
+msgstr "Подсчёт пользователей без роли"
+
+#: includes/settings-template.php:208
+msgid "Allow non super administrators to create, edit, and delete users"
+msgstr "Разрешить простым администраторам создавать, изменять, удалять пользователей"
+
+#: includes/classes/user-role-editor.php:284
+msgid "Change role for users without role"
+msgstr "Изменить роль для пользователей без роли"
+
+#: includes/classes/user-role-editor.php:286
+msgid "No rights"
+msgstr "Нет прав"
+
+#: includes/classes/user-role-editor.php:287
+msgid "Provide new role"
+msgstr "Выберите новую роль"
+
+#: includes/classes/user-role-editor.php:359
+#: includes/classes/user-role-editor.php:361
+msgid "You do not have permission to edit this user."
+msgstr "Нет прав на редактирование этого пользователя"
+
+#: includes/classes/user-other-roles.php:173
+#: includes/classes/user-role-editor.php:387
+msgid "Capabilities"
+msgstr "Возможности"
+
+#: includes/classes/ure-lib.php:1882 includes/classes/user-role-editor.php:506
+msgid "Changelog"
+msgstr "Журнал изменений"
+
+#: includes/classes/settings.php:70 includes/classes/settings.php:90
+#: includes/classes/settings.php:140
+msgid "User Role Editor options are updated"
+msgstr "Изменения в настройках Редактора ролей пользователей сохранены"
+
+#: includes/classes/user-role-editor.php:608
+msgid "You do not have sufficient permissions to manage options for User Role Editor."
+msgstr "У вас нет прав на изменение настроек плагина"
+
+#: includes/classes/capability.php:72 includes/classes/capability.php:179
+#: includes/classes/ure-lib.php:1161 includes/classes/ure-lib.php:1405
+#: includes/classes/ure-lib.php:1520 includes/classes/ure-lib.php:1567
+#: includes/classes/user-role-editor.php:641
+msgid "Insufficient permissions to work with User Role Editor"
+msgstr "Не достаточно прав для работы с User Role Editor"
+
+#: includes/classes/user-role-editor.php:684
+msgid "Add New Role"
+msgstr "Добавить новую роль"
+
+#: includes/classes/user-role-editor.php:685
+#: includes/classes/user-role-editor.php:690
+msgid "Rename Role"
+msgstr "Переименовать роль"
+
+#: includes/classes/user-role-editor.php:686
+msgid " Role name (ID) can not be empty!"
+msgstr "Идентификатор роли (ID) не может быть пустым!"
+
+#: includes/classes/user-role-editor.php:687
+msgid " Role name (ID) must contain latin characters, digits, hyphens or underscore only!"
+msgstr "Ошибка: идентификатор роли может содержать только латинские буквы, цифры, тире и знак подчеркивания"
+
+#: includes/classes/user-role-editor.php:688
+msgid " WordPress does not support numeric Role name (ID). Add latin characters to it."
+msgstr "WordPress не поддерживает цифровые идентификаторы ролей. Начните имя роли с латинских символов."
+
+#: includes/classes/user-role-editor.php:689
+msgid "Add Role"
+msgstr "Добавить роль"
+
+#: includes/classes/user-role-editor.php:691
+msgid "Delete Role"
+msgstr "Удалить роль"
+
+#: includes/classes/user-role-editor.php:692
+msgid "Cancel"
+msgstr "Отмена"
+
+#: includes/classes/user-role-editor.php:693
+msgid "Add Capability"
+msgstr "Новая возм."
+
+#: includes/classes/user-role-editor.php:694
+#: includes/classes/user-role-editor.php:698
+msgid "Delete Capability"
+msgstr "Удалить возм."
+
+#: includes/classes/tools.php:50 includes/classes/user-role-editor.php:729
+msgid "Reset"
+msgstr "Сброс"
+
+#: includes/classes/user-role-editor.php:733
+msgid "For more information on how to undo undesired changes and restore plugin capabilities go to"
+msgstr "Подробнее о том, как откатить сделанные изменения и восстановить разрешения для плагинов, можно узнать здесь"
+
+#: includes/classes/user-role-editor.php:695
+#: includes/classes/user-role-editor.php:735
+msgid "Continue?"
+msgstr "Продолжить?"
+
+#: includes/classes/user-role-editor.php:697
+msgid "Set New Default Role"
+msgstr "Установить"
+
+#: includes/classes/user-role-editor.php:699
+msgid "Warning! Be careful - removing critical capability could crash some plugin or other custom code"
+msgstr "Внимание! Будьте осторожны - удаление критичной возможности может привести к прекращеню работы одного из плагинов или другого кода."
+
+#: includes/classes/user-role-editor.php:700
+msgid " Capability name (ID) can not be empty!"
+msgstr "Идентификатор возможности (ID) не может быть пустым!"
+
+#: includes/classes/user-role-editor.php:701
+msgid " Capability name (ID) must contain latin characters, digits, hyphens or underscore only!"
+msgstr "Ошибка: Наименование возможности должно содержать только латинские буквы и цифры, знаки подчеркивания"
+
+#: includes/classes/user-other-roles.php:85
+#: includes/classes/user-other-roles.php:194
+msgid "Other Roles"
+msgstr "Другие роли"
+
+#: includes/classes/user-other-roles.php:180
+msgid "Edit"
+msgstr "Изменить"
+
+#: includes/classes/role-view.php:408
+msgid "Select Role and change its capabilities:"
+msgstr "Выбери роль и измени права доступа"
+
+#: includes/classes/role-view.php:364 includes/classes/user-view.php:155
+msgid "Show capabilities in human readable form"
+msgstr "Показ возможностей в читабельной форме"
+
+#: includes/classes/role-view.php:378
+msgid "If checked, then apply action to ALL sites of this Network"
+msgstr "Если включено, применить ко всем сайтам этой Сети"
+
+#: includes/classes/role-view.php:391 includes/classes/tools.php:44
+msgid "Apply to All Sites"
+msgstr "Применить ко всем сайтам"
+
+#: includes/classes/view.php:316
+msgid "Quick filter:"
+msgstr "Фильтр:"
+
+#: includes/classes/capabilities-groups-manager.php:126
+msgid "Custom capabilities"
+msgstr "Дополнительные возможности :"
+
+#: includes/classes/ure-lib.php:211
+msgid "Error: wrong request"
+msgstr "Ошибка: неверный запрос"
+
+#: includes/classes/role-view.php:227
+msgid "Select Role:"
+msgstr "Выбери Роль:"
+
+#: includes/classes/ure-lib.php:295
+msgid "Role"
+msgstr "Роль"
+
+#: includes/classes/ure-lib.php:296
+msgid "does not exist"
+msgstr "не существует"
+
+#: includes/classes/ure-lib.php:358
+msgid "Role is updated successfully"
+msgstr "Роль изменена успешно"
+
+#: includes/classes/ure-lib.php:360
+msgid "Roles are updated for all network"
+msgstr "Роли изменены для всей сети"
+
+#: includes/classes/ure-lib.php:366
+msgid "Error occured during role(s) update"
+msgstr "При изменении роли произошла ошибка"
+
+#: includes/classes/ure-lib.php:373
+msgid "User capabilities are updated successfully"
+msgstr "Права пользователя изменены успешно"
+
+#: includes/classes/ure-lib.php:1414 includes/classes/ure-lib.php:1480
+msgid "Error: Role ID must contain latin characters, digits, hyphens or underscore only!"
+msgstr "Ошибка: идентификатор роли (ID) должен содержать только латинские буквы, цифры, знак подчеркивания и дефис."
+
+#: includes/classes/ure-lib.php:1418 includes/classes/ure-lib.php:1484
+msgid "Error: WordPress does not support numeric Role name (ID). Add latin characters to it."
+msgstr "Ошибка: WordPress не поддерживает цифровые идентификаторы ролей. Начните имя роли с латинских символов."
+
+#: includes/classes/ure-lib.php:1433
+msgid "Role %s exists already"
+msgstr "Роль %s уже существует"
+
+#: includes/classes/ure-lib.php:1448
+msgid "Error is encountered during new role create operation"
+msgstr "Произошла ошибка при создании новой роли"
+
+#: includes/classes/ure-lib.php:1450
+msgid "Role %s is created successfully"
+msgstr "Роль %s создана успешно"
+
+#: includes/classes/ure-lib.php:1473
+msgid "Error: Role ID is empty!"
+msgstr "Ошибка: пустой идентификатор (ID) роли!"
+
+#: includes/classes/ure-lib.php:1491
+msgid "Error: Empty role display name is not allowed."
+msgstr "Ошибка: пустое наименование роли не допускается"
+
+#: includes/classes/ure-lib.php:1498
+msgid "Role %s does not exists"
+msgstr "Роль %s не существует"
+
+#: includes/classes/ure-lib.php:1506
+msgid "Role %s is renamed to %s successfully"
+msgstr "Роль %s успешно переименована в %s"
+
+#: includes/classes/ure-lib.php:1578
+msgid "Error encountered during role delete operation"
+msgstr "Произошла ошибка при удалении роли"
+
+#: includes/classes/ure-lib.php:1580
+msgid "Unused roles are deleted successfully"
+msgstr "Неиспользуемые роли удалены успешно"
+
+#: includes/classes/ure-lib.php:1582
+msgid "Role %s is deleted successfully"
+msgstr "Роль %s удалена успешно"
+
+#: includes/classes/ure-lib.php:1637
+msgid "Editor"
+msgstr "Редактор"
+
+#: includes/classes/ure-lib.php:1638
+msgid "Author"
+msgstr "Автор"
+
+#: includes/classes/ure-lib.php:1639
+msgid "Contributor"
+msgstr "Участник"
+
+#: includes/classes/ure-lib.php:1640
+msgid "Subscriber"
+msgstr "Подписчик"
+
+#: includes/classes/ure-lib.php:1642
+msgid "Switch themes"
+msgstr "Менять темы"
+
+#: includes/classes/ure-lib.php:1643
+msgid "Edit themes"
+msgstr "Изменять темы"
+
+#: includes/classes/ure-lib.php:1644
+msgid "Activate plugins"
+msgstr "Активировать плагины"
+
+#: includes/classes/ure-lib.php:1645
+msgid "Edit plugins"
+msgstr "Редактировать плагины"
+
+#: includes/classes/ure-lib.php:1646
+msgid "Edit users"
+msgstr "Изменять пользователей"
+
+#: includes/classes/ure-lib.php:1647
+msgid "Edit files"
+msgstr "Изменять файлы"
+
+#: includes/classes/ure-lib.php:1649
+msgid "Moderate comments"
+msgstr "Модерировать комментарии"
+
+#: includes/classes/ure-lib.php:1650
+msgid "Manage categories"
+msgstr "Управлять категориями"
+
+#: includes/classes/ure-lib.php:1651
+msgid "Manage links"
+msgstr "Управлять ссылками"
+
+#: includes/classes/ure-lib.php:1652
+msgid "Upload files"
+msgstr "Загружать файлы"
+
+#: includes/classes/ure-lib.php:1653
+msgid "Import"
+msgstr "Импорт"
+
+#: includes/classes/ure-lib.php:1654
+msgid "Unfiltered html"
+msgstr "html без фильтра"
+
+#: includes/classes/ure-lib.php:1655
+msgid "Edit posts"
+msgstr "Изменять статьи"
+
+#: includes/classes/ure-lib.php:1656
+msgid "Edit others posts"
+msgstr "Изменять чужие статьи"
+
+#: includes/classes/ure-lib.php:1657
+msgid "Edit published posts"
+msgstr "Редактировать опубликованные статьи"
+
+#: includes/classes/ure-lib.php:1658
+msgid "Publish posts"
+msgstr "Публиковать статьи"
+
+#: includes/classes/ure-lib.php:1659
+msgid "Edit pages"
+msgstr "Изменять страницы"
+
+#: includes/classes/ure-lib.php:1660
+msgid "Read"
+msgstr "Чтение"
+
+#: includes/classes/ure-lib.php:1661
+msgid "Level 10"
+msgstr "Уровень 10"
+
+#: includes/classes/ure-lib.php:1662
+msgid "Level 9"
+msgstr "Уровень 9"
+
+#: includes/classes/ure-lib.php:1663
+msgid "Level 8"
+msgstr "Уровень 9"
+
+#: includes/classes/ure-lib.php:1664
+msgid "Level 7"
+msgstr "Уровень 7"
+
+#: includes/classes/ure-lib.php:1665
+msgid "Level 6"
+msgstr "Уровень 6"
+
+#: includes/classes/ure-lib.php:1666
+msgid "Level 5"
+msgstr "Уровень 5"
+
+#: includes/classes/ure-lib.php:1667
+msgid "Level 4"
+msgstr "Уровень 4"
+
+#: includes/classes/ure-lib.php:1668
+msgid "Level 3"
+msgstr "Уровень 3"
+
+#: includes/classes/ure-lib.php:1669
+msgid "Level 2"
+msgstr "Уровень 2"
+
+#: includes/classes/ure-lib.php:1670
+msgid "Level 1"
+msgstr "Уровень 1"
+
+#: includes/classes/ure-lib.php:1671
+msgid "Level 0"
+msgstr "Уровень 0"
+
+#: includes/classes/ure-lib.php:1672
+msgid "Edit others pages"
+msgstr "Редактировать чужие страницы"
+
+#: includes/classes/ure-lib.php:1673
+msgid "Edit published pages"
+msgstr "Редактировать опубликованные страницы"
+
+#: includes/classes/ure-lib.php:1674
+msgid "Publish pages"
+msgstr "Публиковать страницы"
+
+#: includes/classes/ure-lib.php:1675
+msgid "Delete pages"
+msgstr "Удалять страницы"
+
+#: includes/classes/ure-lib.php:1676
+msgid "Delete others pages"
+msgstr "Удалить чужие страницы"
+
+#: includes/classes/ure-lib.php:1677
+msgid "Delete published pages"
+msgstr "Удалять опубликованные страницы"
+
+#: includes/classes/ure-lib.php:1678
+msgid "Delete posts"
+msgstr "Удалять статьи"
+
+#: includes/classes/ure-lib.php:1679
+msgid "Delete others posts"
+msgstr "Удалять чужие статьи"
+
+#: includes/classes/ure-lib.php:1680
+msgid "Delete published posts"
+msgstr "Удалять опубликованные статьи"
+
+#: includes/classes/ure-lib.php:1681
+msgid "Delete private posts"
+msgstr "Удалять частные статьи"
+
+#: includes/classes/ure-lib.php:1682
+msgid "Edit private posts"
+msgstr "Редактировать частные статьи"
+
+#: includes/classes/ure-lib.php:1683
+msgid "Read private posts"
+msgstr "Читать частные статьи"
+
+#: includes/classes/ure-lib.php:1684
+msgid "Delete private pages"
+msgstr "Удалять частные страницы"
+
+#: includes/classes/ure-lib.php:1685
+msgid "Edit private pages"
+msgstr "Редактировать частные страницы"
+
+#: includes/classes/ure-lib.php:1686
+msgid "Read private pages"
+msgstr "Читать частные страницы"
+
+#: includes/classes/ure-lib.php:1687
+msgid "Delete users"
+msgstr "Удалять пользователей"
+
+#: includes/classes/ure-lib.php:1688
+msgid "Create users"
+msgstr "Создавать пользователей"
+
+#: includes/classes/ure-lib.php:1689
+msgid "Unfiltered upload"
+msgstr "Загрузка без фильтра"
+
+#: includes/classes/ure-lib.php:1690
+msgid "Edit dashboard"
+msgstr "Изменять панель администратора"
+
+#: includes/classes/ure-lib.php:1691
+msgid "Update plugins"
+msgstr "Обновлять плагины"
+
+#: includes/classes/ure-lib.php:1692
+msgid "Delete plugins"
+msgstr "Удалять плагины"
+
+#: includes/classes/ure-lib.php:1693
+msgid "Install plugins"
+msgstr "Устанавливать плагины"
+
+#: includes/classes/ure-lib.php:1694
+msgid "Update themes"
+msgstr "Обновлять темы"
+
+#: includes/classes/ure-lib.php:1695
+msgid "Install themes"
+msgstr "Устанавливать темы"
+
+#: includes/classes/ure-lib.php:1696
+msgid "Update core"
+msgstr "Обновлять ядро"
+
+#: includes/classes/ure-lib.php:1697
+msgid "List users"
+msgstr "Список пользователей"
+
+#: includes/classes/ure-lib.php:1698
+msgid "Remove users"
+msgstr "Удалять пользователей"
+
+#: includes/classes/ure-lib.php:1699
+msgid "Add users"
+msgstr "Добавлять пользователей"
+
+#: includes/classes/ure-lib.php:1700
+msgid "Promote users"
+msgstr "Продвигать пользователей"
+
+#: includes/classes/ure-lib.php:1701
+msgid "Edit theme options"
+msgstr "Изменять настройки темы"
+
+#: includes/classes/ure-lib.php:1702
+msgid "Delete themes"
+msgstr "Удалять темы"
+
+#: includes/classes/ure-lib.php:1703
+msgid "Export"
+msgstr "Экспорт"
+
+#: includes/classes/capability.php:38
+msgid "Error: Capability name must contain latin characters and digits only!"
+msgstr "Ошибка: Имя должно содержать только латинские буквы и цифры"
+
+#: includes/classes/capability.php:94
+msgid "Capability %s was added successfully"
+msgstr "Возможность %s добавлена успешно"
+
+#: includes/classes/capability.php:96
+msgid "Capability %s exists already"
+msgstr "Возможность %s уже существует"
+
+#: includes/classes/ure-lib.php:1878
+msgid "Version:"
+msgstr "Версия:"
+
+#: includes/classes/ure-lib.php:1879
+msgid "Author's website"
+msgstr "Вебсайт автора"
+
+#: includes/classes/ure-lib.php:1880
+msgid "Plugin webpage"
+msgstr "Страница плагина"
+
+#: includes/classes/ure-lib.php:1881
+msgid "Plugin download"
+msgstr "Загрузить плагин"
+
+#: includes/classes/ure-lib.php:1883
+msgid "FAQ"
+msgstr "Часто задаваемые вопросы"
+
+#: includes/classes/role-view.php:74
+msgid "None"
+msgstr "Нет"
+
+#: includes/classes/role-view.php:107
+msgid "Delete All Unused Roles"
+msgstr "Удалить все неиспользуемые роли"
+
+#: includes/classes/grant-roles.php:241 includes/classes/user-view.php:98
+msgid "&mdash; No role for this site &mdash;"
+msgstr "&mdash; Нет роли для этого сайта &mdash;"
+
+#: includes/classes/user-view.php:73
+msgid "Network Super Admin"
+msgstr "Суперадминистратор сети"
+
+#: includes/classes/user-view.php:138
+msgid "Change capabilities for user"
+msgstr "Изменить возможности для пользователя"
+
+#: includes/classes/user-view.php:182
+msgid "bbPress Role:"
+msgstr "Роль bbPress:"
+
+#: includes/classes/screen-help.php:84
+msgid "Allow non super-admininstrators to create, edit and delete users"
+msgstr "Разрешить локальным администраторам сайтов (не суперадмин) создавать, изменять, удалять пользователей на своих сайтах"
+
+#: includes/classes/ure-lib.php:2063
+msgid "Denied: %s"
+msgstr "Отказано: %s"
+
+#: includes/classes/user-other-roles.php:86
+msgid "Select additional roles for this user"
+msgstr "Выберите дополнительные роли для этого пользователя"
+
+#: includes/classes/user-other-roles.php:229
+msgid "Additional Capabilities"
+msgstr "Дополнительные возможности"
+
+#. #-#-#-#-#  user-role-editor-code.pot (User Role Editor 4.42)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  user-role-editor-code.pot (User Role Editor 4.42)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://www.role-editor.com"
+msgstr "https://www.role-editor.com"
+
+#. Author of the plugin/theme
+msgid "Vladimir Garagulya"
+msgstr "Владимир Гарагуля"
+
+#. Description of the plugin/theme
+msgid "Change/add/delete WordPress user roles and capabilities."
+msgstr "Изменить/Добавить/Удалить роли и права пользователя WordPress"
+
+#: includes/classes/ure-lib.php:1619
+msgid "Can not set Administrator role as a default one"
+msgstr "Вы не можете установить роль администратора по умолчанию"
+
+#: includes/classes/capability.php:197
+msgid "Capability %s was removed successfully"
+msgstr "Возможность %s была успешно удалена"
+
+#. #-#-#-#-#  user-role-editor-code.pot (User Role Editor 4.42)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: includes/classes/capabilities-groups-manager.php:75
+#: includes/classes/ure-lib.php:234 includes/classes/user-role-editor.php:557
+#: includes/classes/user-role-editor.php:588
+msgid "User Role Editor"
+msgstr "User Role Editor"
+
+#: includes/classes/user-role-editor.php:480
+#: includes/classes/user-role-editor.php:493
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/classes/user-role-editor.php:696
+msgid "Default Role"
+msgstr "Роль по умолчанию"
+
+#: includes/settings-template.php:182
+msgid "Note for multisite environment: take into account that other default roles should exist at the site, in order to be assigned to the new registered users."
+msgstr "Заметка для WordPress с несколькими сайтами: учтите, что для присвоения вновь зарегистрированному пользователю дополнительных ролей по умолчанию эти роли должны существовать на этом сайте."
+
+#: includes/classes/settings.php:120
+msgid "Default Roles are updated"
+msgstr "Изменения в роли по умолчанию сохранены"
+
+#: includes/classes/user-role-editor.php:541 includes/settings-template.php:32
+msgid "Default Roles"
+msgstr "Роли по умолчанию"
+
+#: includes/classes/screen-help.php:65
+msgid "Other default roles for new registered user"
+msgstr "Другие роли по умолчанию для вновь зарегистрированного пользователя:"
+
+#: includes/classes/ure-lib.php:1616
+msgid "Default role for new users is set to %s successfully"
+msgstr "Роль по умолчанию для новых пользователй изменена на %s успешно."
+
+#: includes/classes/ure-lib.php:1613
+msgid "Error encountered during default role change operation"
+msgstr "Произошла ошибка при изменении роли по умолчанию"
+
+#: includes/classes/user-view.php:191
+msgid "Other Roles:"
+msgstr "Другие роли:"
+
+#: includes/classes/user-view.php:176
+msgid "Primary Role:"
+msgstr "Первичная роль:"
+
+#: includes/settings-template.php:17
+msgid "User Role Editor - Options"
+msgstr "Редактор ролей пользователей - Настройки"
+
+#: includes/classes/user-role-editor.php:682
+msgid "Update"
+msgstr "Обновить"
+
+#: includes/classes/screen-help.php:12 includes/classes/screen-help.php:43
+#: includes/classes/screen-help.php:62 includes/classes/screen-help.php:81
+msgid "User Role Editor Options page help"
+msgstr "Редактор ролей пользователей - Настройки - Помощь"
+
+#: includes/classes/ure-lib.php:1648
+msgid "Manage options"
+msgstr "Управлять настройками"
+
+#: includes/settings-template.php:169
+msgid "Primary default role: "
+msgstr "Основная роль по умолчанию: "
+
+#: includes/classes/role-view.php:207 includes/classes/role-view.php:218
+msgid "Role name (ID): "
+msgstr "Идентификатор роли (ID): "
+
+#: includes/classes/role-view.php:209 includes/classes/role-view.php:220
+msgid "Display Role Name: "
+msgstr "Наименование роли: "
+
+#: includes/classes/role-view.php:211
+msgid "Make copy of: "
+msgstr "Создать копию из: "
+
+#: includes/classes/role-view.php:252
+msgid "Capability name (ID): "
+msgstr "Идентификатор (ID): "
+
+#: includes/classes/ure-lib.php:295
+msgid "Error: "
+msgstr "Ошибка: "
+
+#: includes/classes/ure-lib.php:378
+msgid "Error occured during user update"
+msgstr "При изменении прав пользователя произошла ошибка"
+
+#: includes/classes/ure-lib.php:436
+msgid "User Roles are restored to WordPress default values. "
+msgstr "Роли возвращены к начальному состоянию. "
+
+#: includes/classes/ure-lib.php:1621
+msgid "This role does not exist - "
+msgstr "Эта роль не существует - "
+
+#: includes/classes/user-role-editor.php:683
+msgid "Please confirm permissions update"
+msgstr "Пожалуйста, подтвердите обновление разрешений"
+
+#: includes/settings-template.php:176
+msgid "Other default roles for new registered user: "
+msgstr "Другие роли по умолчанию для вновь зарегистрированного пользователя: "

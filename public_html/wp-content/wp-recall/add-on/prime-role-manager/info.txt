@@ -1,0 +1,8 @@
+Name: Prime Role Manager;
+Version: 1.0.1;
+Support Core: 16.6.6;
+ItemID: 15765;
+Parent Addon: prime-forum;
+Description: Менеджер пользовательских ролей для форума PrimeForum;
+Author: Плечёв Андрей;
+Author URI: https://codeseller.ru/;

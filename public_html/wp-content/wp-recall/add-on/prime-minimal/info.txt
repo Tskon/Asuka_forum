@@ -1,0 +1,8 @@
+Name: Prime Minimal;
+Version: 1.7.0;
+Support Core: 16.0.0;
+Parent Addon: prime-forum;
+Custom Manager: prime-forum;
+Description: Минимал тема форума на Основе PrimeFirst темы от Плечёва Андрея;
+Author: SAZONISCHE;
+Author URI: https://mmcs.pro/;

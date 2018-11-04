@@ -1,0 +1,44 @@
+.pfm-post-need-approve {
+    background: #ff000014;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ffc1c1;
+    color: #da3a3a;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.pfm-post-need-approve a {
+    color: #ffffff;
+    background: #6094bc;
+    font-size: 13px;
+    padding: 3px 19px;
+    text-shadow: 1px 1px 1px #4c4c4c;
+}
+.pfm-post-need-approve a:hover {
+    background: #73a6ce;
+}
+
+.have-ua.can-approve .prime-general-title:after {
+    display: block;
+    background: #ff000014;
+    padding: 0px 8px;
+    font-size: 12px;
+    border: 1px solid #f7c0c0;
+    margin-left: 10px;
+    content: 'Есть сообщения на утверждении';
+    color: #a20909;
+    width: 175px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.have-ua.min-ua-post-index-1 {
+    display:none!important;
+}
+.have-ua.can-approve.min-ua-post-index-1 {
+    display:flex!important;
+}
+
+.have-ua.can-approve.min-ua-post-index-1 .prime-general-title:after {
+    content: 'Тема на утверждении';
+}
