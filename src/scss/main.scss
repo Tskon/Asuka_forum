@@ -4,11 +4,10 @@
 
 *, *:before, *:after{
   box-sizing: border-box;
-
 }
 
 body{
-  padding: 0;
+  padding: 10;
   margin: 0;
   background-color: #ebebeb;
   & > * {

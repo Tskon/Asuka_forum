@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css">
+  <?php wp_head(); ?>
 </head>
 <body>
 <div class="headerWrapper">
