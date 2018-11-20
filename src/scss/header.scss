@@ -44,7 +44,7 @@
       &:last-child:after{
         display: none;
       }
-      &.active a{
+      &.current-menu-item a{
         //text-decoration: underline;
         display: inline-block;
         line-height: 120px;
