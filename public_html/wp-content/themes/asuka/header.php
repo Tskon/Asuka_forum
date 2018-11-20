@@ -10,15 +10,20 @@
 <div class="headerWrapper">
   <header class="header">
     <div class="logo">
-      <div class="logo__img">&nbsp;</div>
+      <div class="logo__img">&nbsp</div>
       <span class="logo__title">Asuka</span></div>
-    <nav class="mainMenu">
-      <ul>
-        <li class="active"><a href="#">Главная</a></li>
-        <li><a href="#">Вербовочный пункт</a></li>
-        <li><a href="#">Форум</a></li>
-      </ul>
-    </nav>
+    <?php if ( has_nav_menu( 'header_menu' ) ) : ?>
+      <nav class="mainMenu" role="navigation">
+        <?php
+        wp_nav_menu( array(
+          'theme_location' => 'header_menu',
+          'menu_class'     => 'ssssss',
+          'depth'          => 1,
+        ) );
+        ?>
+      </nav>
+    <?php endif; ?>
+
   </header>
 </div>
 <main class="indexPage">
