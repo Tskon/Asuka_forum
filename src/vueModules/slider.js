@@ -1,5 +1,11 @@
 import Vue from 'vue';
 
 new Vue({
-  el: ''
+  el: '#jsAsukaNewsSlider',
+  data: {},
+  computed: {
+    isNeedToShowNews() {
+      return false;
+    }
+  }
 });

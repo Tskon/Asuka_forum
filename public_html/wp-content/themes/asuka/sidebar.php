@@ -1,7 +1,7 @@
 <main class="indexPage">
-    <div class="news">
+    <div class="news" id="jsAsukaNewsSlider">
         <div class="news__previewImg"></div>
-        <div class="news__description">
+        <div class="news__description" v-show="isNeedToShowNews">
             <h2>Заголовок новости</h2>
             Текст новости <br>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque eveniet itaque nisi obcaecati
