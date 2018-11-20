@@ -23,12 +23,12 @@
 define('DB_NAME', 'tskon1_testasuka');
 
 /** Имя пользователя MySQL */
-define('DB_USER', 'tskon1_testasuka');
-//define('DB_USER', 'root');
+//define('DB_USER', 'tskon1_testasuka');
+define('DB_USER', 'root');
 
 /** Пароль к базе данных MySQL */
-define('DB_PASSWORD', 'vgp%wM6d');
-//define('DB_PASSWORD', 'q1w2Q!W@');
+//define('DB_PASSWORD', 'vgp%wM6d');
+define('DB_PASSWORD', 'q1w2Q!W@');
 
 /** Имя сервера MySQL */
 define('DB_HOST', 'localhost');
