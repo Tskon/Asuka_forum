@@ -76,6 +76,10 @@
   font-size: 42px;
 }
 
+.logo:hover{
+  text-decoration: none;
+}
+
 .logo__img{
   background: url("../img/logo.png") no-repeat center center $orange;
   line-height: 120px;
