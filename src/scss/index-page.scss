@@ -3,7 +3,8 @@
 }
 
 .news{
-  display: flex;
+  display: none;
+  //display: flex;
   color: $white;
   h2{
     margin: 0 0 10px;
@@ -15,7 +16,7 @@
 
 .news__previewImg {
   width: 50%;
-  background: url("../img/news_preview/first-news.jpg") no-repeat #373737 center;
+  background: no-repeat #373737 center;
   background-size: 100% auto;
   border-right: 5px solid $orange;
   position: relative;

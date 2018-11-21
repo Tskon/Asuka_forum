@@ -1,42 +1,32 @@
 <main class="indexPage">
-  <!--  <div class="news" id="jsAsukaNewsSlider">-->
-  <!--    <div class="news__previewImg"></div>-->
-  <!--    <div class="news__description" v-show="isNeedToShowNews">-->
-  <!--      <h2>Заголовок новости</h2>-->
-  <!--      Текст новости <br>-->
-  <!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque eveniet itaque nisi obcaecati-->
-  <!--      quasi rem-->
-  <!--      veritatis? Alias architecto ducimus id nihil numquam? Ad dolorem eum itaque repellat similique sunt?-->
-  <!--    </div>-->
-  <!--  </div>-->
-
   <?php
   // запрос
   $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 2)); ?>
 
   <?php if ($wpb_all_query->have_posts()) : ?>
+    <div id="jsAsukaSlider">
+      <!-- the loop -->
+      <?php $id = 0;
+      while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post(); ?>
+        <div class="news">
+          <div class="news__previewImg"
+            <?php
+            $thumbnail_attributes = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); // возвращает массив параметров миниатюры
+            ?>
+               style="background-image: url('<?php
+               echo ($thumbnail_attributes[0]) ? $thumbnail_attributes[0] : bloginfo('template_url')."/img/news_preview/first-news.jpg"; // URL миниатюры
+               ?>')"
+          ></div>
+          <div class="news__description">
+            <h2><?php the_title(); ?></h2>
+            <?php the_content(); ?>
 
-    <!-- the loop -->
-    <?php while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post(); ?>
-      <div class="news jsAsukaSlider" style="display: none">
-        <div class="news__previewImg"
-          <?php
-          $thumbnail_attributes = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); // возвращает массив параметров миниатюры
-          if ($thumbnail_attributes[0] != false) :
-          ?>
-             style="background-image: url('<?php
-             echo $thumbnail_attributes[0]; // URL миниатюры
-             endif;
-             ?>')"></div>
-        <div class="news__description" v-show="isNeedToShowNews">
-          <h2><?php the_title(); ?></h2>
-          <?php the_content(); ?>
-
-          <!--            <p><a href="--><?php //the_permalink(); ?><!--">Подробнее</a></p>-->
+            <!--            <p><a href="--><?php //the_permalink(); ?><!--">Подробнее</a></p>-->
+          </div>
         </div>
-      </div>
-    <?php endwhile; ?>
-    <!-- end of the loop -->
+      <?php endwhile; ?>
+      <!-- end of the loop -->
+    </div>
     <?php wp_reset_postdata(); ?>
   <?php endif; ?>
 
