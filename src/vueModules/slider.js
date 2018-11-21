@@ -1,26 +1,47 @@
 import Vue from 'vue/dist/vue.esm.js';
 
-new Vue({
+const vm = new Vue({
   el: '#jsAsukaSlider',
   data: {
-    slideCounter: 0
+    slideCounter: 0,
+    slides: document.querySelectorAll('#jsAsukaSlider .news')
   },
   computed: {
-    slides(){
-      return document.querySelectorAll('#jsAsukaSlider .news')
+    slidesLength() {
+      return this.slides.length
+    }
+  }
+  ,
+  methods: {
+    prevSlide() {
+      if (this.slideCounter !== 0) this.slideCounter--;
+      showCurrentSlide();
+    },
+    nextSlide() {
+      if (this.slideCounter !== this.slides.length - 1) this.slideCounter++;
+      showCurrentSlide();
     },
   },
-  methods:{
-    showCurrentSlide(){
-      this.slides.forEach((slide, i) => {
-        if (i === this.slideCounter) slide.style.display = 'flex';
-      })
-    }
+  created() {
+    this.slides.forEach((slide, i) => {
+      if (i === this.slideCounter) {
+        slide.style.display = 'flex';
+      } else {
+        slide.style.display = 'none';
+      }
+    })
   },
-  created(){
-    this.showCurrentSlide();
-  },
-  updated(){
-    this.showCurrentSlide();
-  }
+
 });
+
+const slides = document.querySelectorAll('#jsAsukaSlider .news');
+
+function showCurrentSlide() {
+  slides.forEach((slide, i) => {
+    if (i === vm.slideCounter) {
+      slide.style.display = 'flex';
+    } else {
+      slide.style.display = 'none';
+    }
+  })
+}

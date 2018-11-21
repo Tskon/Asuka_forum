@@ -1,7 +1,7 @@
 <main class="indexPage">
   <?php
   // запрос
-  $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 2)); ?>
+  $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 10)); ?>
 
   <?php if ($wpb_all_query->have_posts()) : ?>
     <div id="jsAsukaSlider">
@@ -16,7 +16,16 @@
                style="background-image: url('<?php
                echo ($thumbnail_attributes[0]) ? $thumbnail_attributes[0] : bloginfo('template_url')."/img/news_preview/first-news.jpg"; // URL миниатюры
                ?>')"
-          ></div>
+          >
+            <div class="news__controls">
+              <button @click="prevSlide"
+                      :disabled="slideCounter === 0"
+              >Более свежая</button>
+              <button @click="nextSlide"
+                      :disabled="slideCounter === slidesLength - 1"
+              >Предыдущая новость</button>
+            </div>
+          </div>
           <div class="news__description">
             <h2><?php the_title(); ?></h2>
             <?php the_content(); ?>
@@ -24,7 +33,7 @@
             <!--            <p><a href="--><?php //the_permalink(); ?><!--">Подробнее</a></p>-->
           </div>
         </div>
-      <?php endwhile; ?>
+      <?php $id++; endwhile; ?>
       <!-- end of the loop -->
     </div>
     <?php wp_reset_postdata(); ?>
