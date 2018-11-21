@@ -17,7 +17,7 @@
 .news__previewImg {
   width: 50%;
   background: no-repeat #373737 center;
-  background-size: 100% auto;
+  background-size: cover;
   border-right: 5px solid $orange;
   position: relative;
   &:before{

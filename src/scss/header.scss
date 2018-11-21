@@ -107,7 +107,7 @@
     ul li:after {
       display: none;
     }
-    .menu-main-container {
+    .menu-main-menu-container {
       display: none;
       position: fixed;
       top: 150px;
@@ -134,14 +134,20 @@
           display: none;
         }
       }
-
-      &--show {
-        display: block;
-      }
+    }
+    .menu-main-menu-container--show {
+      display: block!important;
     }
     .mainMenu__burgerBtn {
       display: block;
     }
   }
+}
+
+#recallbar{
+  position: absolute!important;
+  left: 0;
+  right: 0;
+  max-width: unset;
 }
 
