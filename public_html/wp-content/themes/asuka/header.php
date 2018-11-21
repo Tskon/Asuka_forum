@@ -24,6 +24,7 @@
           'depth' => 1,
         ));
         ?>
+        <button class="mainMenu__burgerBtn">Меню</button>
       </nav>
     <?php endif; ?>
 

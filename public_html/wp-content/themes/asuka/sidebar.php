@@ -20,10 +20,10 @@
             <div class="news__controls">
               <button @click="prevSlide"
                       :disabled="slideCounter === 0"
-              >Более свежая</button>
+              > << </button>
               <button @click="nextSlide"
                       :disabled="slideCounter === slidesLength - 1"
-              >Предыдущая новость</button>
+              > >> </button>
             </div>
           </div>
           <div class="news__description">

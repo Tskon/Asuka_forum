@@ -1,4 +1,4 @@
-.headerWrapper{
+.headerWrapper {
   width: 100%;
   max-width: unset;
   background-color: $dark-dark-grey;
@@ -16,13 +16,48 @@
   margin: 0 auto;
 }
 
-.search, .logo, .mainMenu{
+.search, .logo, .mainMenu {
   display: flex;
   align-items: center;
   padding: 0 10px;
 }
 
+.logo {
+  padding: 0;
+}
+
+.logo__title {
+  padding: 0 15px 0 40px;
+  font-size: 42px;
+  @media all and (max-width: 360px) {
+    display: none;
+  }
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo__img {
+  background: url("../img/logo.png") no-repeat center center $orange;
+  line-height: 120px;
+  width: 130px;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 20px solid transparent;
+    border-left: 20px solid $orange;
+    width: 0;
+    height: 0;
+    right: -40px;
+    top: calc(50% - 20px);
+  }
+}
+
 .mainMenu {
+  z-index: 10;
   ul {
     display: flex;
     list-style: none;
@@ -37,14 +72,14 @@
       height: 100%;
       line-height: 120px;
       font-size: 18px;
-      &:after{
+      &:after {
         content: '|';
         padding: 0 10px;
       }
-      &:last-child:after{
+      &:last-child:after {
         display: none;
       }
-      &.current-menu-item a{
+      &.current-menu-item a {
         //text-decoration: underline;
         display: inline-block;
         line-height: 120px;
@@ -65,35 +100,48 @@
       }
     }
   }
-}
+  .mainMenu__burgerBtn {
+    display: none;
+  }
+  @media all and (max-width: 650px) {
+    ul li:after {
+      display: none;
+    }
+    .menu-main-container {
+      display: none;
+      position: fixed;
+      top: 150px;
+      right: 0;
+      background-color: $dark-dark-grey;
+      width: 100%;
+      border-top: 1px solid $orange;
+      border-bottom: 1px solid $orange;
+      ul {
+        flex-direction: column;
+        padding: 20px 0;
+      }
+      li {
+        line-height: 30px;
+        width: 100%;
+        padding: 5px 50px;
 
-.logo{
-  padding: 0;
-}
+      }
+      li.current-menu-item a {
+        background-color: $orange;
+        line-height: 30px;
+        display: block;
+        &:before, &:after {
+          display: none;
+        }
+      }
 
-.logo__title {
-  padding: 0 15px 0 40px;
-  font-size: 42px;
-}
-
-.logo:hover{
-  text-decoration: none;
-}
-
-.logo__img{
-  background: url("../img/logo.png") no-repeat center center $orange;
-  line-height: 120px;
-  width: 130px;
-  position: relative;
-  &:after{
-    content: '';
-    display: block;
-    position: absolute;
-    border: 20px solid transparent;
-    border-left: 20px solid $orange;
-    width: 0;
-    height: 0;
-    right: -40px;
-    top: calc(50% - 20px);
+      &--show {
+        display: block;
+      }
+    }
+    .mainMenu__burgerBtn {
+      display: block;
+    }
   }
 }
+

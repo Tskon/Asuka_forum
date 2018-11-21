@@ -46,21 +46,8 @@
 
 .news__controls{
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   right: 10px;
-  button{
-    padding: 5px;
-    border: 1px solid $orange;
-    background-color: $dark-dark-grey;
-    color: $white;
-    cursor: pointer;
-    &:disabled{
-      background-color: lighten($dark-dark-grey, 10%);
-      color: darken($white, 20%);
-      cursor: unset;
-      border-color: $dark-dark-grey ;
-    }
-  }
 }
 
 .contentBlocks{
