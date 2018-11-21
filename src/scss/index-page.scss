@@ -1,11 +1,17 @@
 .indexPage{
-  padding-top: 5px;
+  padding: 5px;
+}
+
+#jsAsukaSlider span{
+  display: flex;
 }
 
 .news{
-  //display: none;
+  width: 100%;
   display: flex;
   color: $white;
+  min-height: 350px;
+  max-height: 350px;
   h2{
     margin: 0 0 10px;
     padding-bottom: 10px;

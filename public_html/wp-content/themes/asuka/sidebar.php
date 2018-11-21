@@ -1,43 +1,34 @@
 <main class="indexPage">
-  <?php
-  // запрос
-  $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 10)); ?>
 
-  <?php if ($wpb_all_query->have_posts()) : ?>
-    <div id="jsAsukaSlider">
-      <!-- the loop -->
-      <?php $id = 0;
-      while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post(); ?>
-        <div class="news">
-          <div class="news__previewImg"
-            <?php
-            $thumbnail_attributes = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); // возвращает массив параметров миниатюры
-            ?>
-               style="background-image: url('<?php
-               echo ($thumbnail_attributes[0]) ? $thumbnail_attributes[0] : bloginfo('template_url')."/img/news_preview/first-news.jpg"; // URL миниатюры
-               ?>')"
-          >
-            <div class="news__controls">
-              <button @click="prevSlide"
-                      :disabled="slideCounter === 0"
-              > << </button>
-              <button @click="nextSlide"
-                      :disabled="slideCounter === slidesLength - 1"
-              > >> </button>
-            </div>
-          </div>
-          <div class="news__description">
-            <h2><?php the_title(); ?></h2>
-            <?php the_content(); ?>
+  <div id="jsAsukaSlider">
+    <transition-group name="fade">
+      <div class="news" v-for="(post,i) in posts" v-show="isNeedToShow(i)" :key="i">
+        <div class="news__previewImg"
+             :style="post.imgUrl"
+        >
+          <div class="news__controls">
+            <button
+                @click="prevSlide"
+                :disabled="slideCounter === 0"
+            > <<
+            </button>
 
-            <!--            <p><a href="--><?php //the_permalink(); ?><!--">Подробнее</a></p>-->
+            <button
+                @click="nextSlide"
+                :disabled="slideCounter === slidesLength - 1"
+            > >>
+            </button>
           </div>
         </div>
-      <?php $id++; endwhile; ?>
-      <!-- end of the loop -->
-    </div>
-    <?php wp_reset_postdata(); ?>
-  <?php endif; ?>
+
+        <div class="news__description">
+          <h2>{{ post.post_title }}</h2>
+          <div v-html="post.post_content"></div>
+        </div>
+      </div>
+    </transition-group>
+  </div>
+  </transition>
 
   <?php
   if (is_active_sidebar('index_widgets')) : ?>

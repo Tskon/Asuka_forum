@@ -1,47 +1,32 @@
 import Vue from 'vue/dist/vue.esm.js';
 
 const vm = new Vue({
-  el: '#jsAsukaSlider',
+  el: document.getElementById('jsAsukaSlider'),
   data: {
     slideCounter: 0,
-    slides: document.querySelectorAll('#jsAsukaSlider .news')
+    // posts: indexSlidesFromWP.wp.posts
   },
   computed: {
     slidesLength() {
-      return this.slides.length
+      return this.posts.length
+    },
+    posts(){
+      return indexSlidesFromWP.wp.posts.map((item,i)=>{
+        item.imgUrl = 'background-image: url(' + indexSlidesFromWP.imgUrl[i] + ')';
+        return item
+      })
     }
   }
   ,
   methods: {
     prevSlide() {
       if (this.slideCounter !== 0) this.slideCounter--;
-      showCurrentSlide();
     },
     nextSlide() {
-      if (this.slideCounter !== this.slides.length - 1) this.slideCounter++;
-      showCurrentSlide();
+      if (this.slideCounter !== this.posts.length - 1) this.slideCounter++;
     },
-  },
-  created() {
-    this.slides.forEach((slide, i) => {
-      if (i === this.slideCounter) {
-        slide.style.display = 'flex';
-      } else {
-        slide.style.display = 'none';
-      }
-    })
-  },
-
-});
-
-const slides = document.querySelectorAll('#jsAsukaSlider .news');
-
-function showCurrentSlide() {
-  slides.forEach((slide, i) => {
-    if (i === vm.slideCounter) {
-      slide.style.display = 'flex';
-    } else {
-      slide.style.display = 'none';
+    isNeedToShow(i){
+      return i === this.slideCounter
     }
-  })
-}
+  }
+});

@@ -1,0 +1,7 @@
+.fade-enter-active, .fade-leave-active {
+  transition: all .5s;
+}
+.fade-enter, .fade-leave-to {
+  transform: scale(0);
+  width: 0;
+}
