@@ -21,7 +21,7 @@ const vm = new Vue({
   methods: {
     chooseImg(i){
       if (indexSlidesFromWP.imgUrl[i] === ''){
-        return "/wp-content/themes/asuka/img/news_preview/" + this.randomInteger(1,10) + '.jpg'
+        return "/wp-content/themes/asuka/img/news_preview/" + this.randomInteger(1,11) + '.jpg'
       } else {
         return indexSlidesFromWP.imgUrl[i];
       }
