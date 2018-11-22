@@ -12,6 +12,7 @@ body{
   padding: 0;
   margin: 0;
   background-color: #ebebeb;
+  background: url("../img/bg.jpg");
   & > * {
     width: 100%;
     max-width: $main-width;
