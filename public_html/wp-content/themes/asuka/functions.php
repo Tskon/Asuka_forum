@@ -58,7 +58,7 @@ while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post();
   if ($thumbnail_attributes[0]):
     $dataToBePassed['imgUrl'][$i] = $thumbnail_attributes[0];
   else:
-    $dataToBePassed['imgUrl'][$i] = "/wp-content/themes/asuka/img/news_preview/first-news.jpg";
+    $dataToBePassed['imgUrl'][$i] = "";
   endif;
   $i++;
 endwhile;

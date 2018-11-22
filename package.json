@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --watch --mode development",
-    "prod": "webpack --mode production"
+    "prod": "webpack --watch --mode production"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.1.0",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2"
   },

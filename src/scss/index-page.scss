@@ -1,18 +1,18 @@
-.indexPage{
+.indexPage {
   padding: 5px;
 }
 
-#jsAsukaSlider span{
+#jsAsukaSlider span {
   display: flex;
 }
 
-.news{
+.news {
   width: 100%;
   display: flex;
   color: $white;
-  min-height: 400px;
-  max-height: 400px;
-  h2{
+  min-height: 350px;
+  max-height: 350px;
+  h2 {
     margin: 0 0 10px;
     padding-bottom: 10px;
     border-bottom: solid 1px $orange;
@@ -26,12 +26,12 @@
   background-size: cover;
   border-right: 5px solid $orange;
   position: relative;
-  &:before{
+  &:before {
     content: '';
     display: block;
     padding-top: 60%;
   }
-  &:after{
+  &:after {
     content: '';
     display: block;
     position: absolute;
@@ -44,33 +44,58 @@
   }
 }
 
-.news__description{
+.news__description {
   background-color: $dark-dark-grey;
   width: 50%;
   padding: 30px 10px 30px 30px;
   white-space: pre-line;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  &::-webkit-scrollbar-button {
+    background-color: $dark-dark-grey;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $orange;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background-color: $dark-dark-grey;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: $orange;
+    border-radius: 3px;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: $orange;
+  }
+  &::-webkit-resizer {
+    background-color: $orange;
+  }
 }
 
-.news__controls{
+.news__controls {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-.contentBlocks{
+.contentBlocks {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 0;
 }
 
-.contentBlocks__block{
+.contentBlocks__block {
   width: calc(50% - 5px);
   background-color: $dark-grey;
   color: $white;
   padding: 15px;
   margin-bottom: 10px;
-  h2{
+  h2 {
     margin: 0 0 10px;
     padding-bottom: 10px;
     border-bottom: solid 1px $orange;
@@ -78,16 +103,18 @@
   }
 }
 
-@media all and (max-width: 750px){
-  .news{
+@media all and (max-width: 750px) {
+  .news {
     flex-direction: column;
     max-height: unset;
-    & > * {width: 100%}
+    & > * {
+      width: 100%
+    }
   }
   .news__previewImg {
     border-right: none;
     border-bottom: 5px solid $orange;
-    &:after{
+    &:after {
       content: '';
       display: block;
       position: absolute;
@@ -99,13 +126,13 @@
       left: calc(50% - 20px);
     }
   }
-  .news__description{
+  .news__description {
     padding: 30px 10px 30px 10px;
   }
-  .contentBlocks{
+  .contentBlocks {
     flex-direction: column;
   }
-  .contentBlocks__block{
+  .contentBlocks__block {
     width: 100%;
     padding: 10px;
   }
