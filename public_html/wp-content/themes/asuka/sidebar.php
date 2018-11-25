@@ -22,8 +22,9 @@
         </div>
 
         <div class="news__description">
-          <h2>{{ post.post_title }}</h2>
+          <h2>{{ post.post_title }} <span class="news__date">({{ post.post_date.split(' ')[0] }})</span></h2>
           <div v-html="post.post_content"></div>
+
         </div>
       </div>
     </transition-group>

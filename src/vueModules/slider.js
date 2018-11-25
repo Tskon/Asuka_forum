@@ -1,5 +1,5 @@
 import Vue from 'vue/dist/vue.esm.js';
-
+console.log(indexSlidesFromWP.wp)
 const vm = new Vue({
   el: document.getElementById('jsAsukaSlider'),
   data: {
@@ -21,7 +21,7 @@ const vm = new Vue({
   methods: {
     chooseImg(i){
       if (indexSlidesFromWP.imgUrl[i] === ''){
-        return "/wp-content/themes/asuka/img/news_preview/" + this.randomInteger(1,14) + '.jpg'
+        return "/wp-content/themes/asuka/img/news_preview/" + this.randomInteger(1,15) + '.jpg'
       } else {
         return indexSlidesFromWP.imgUrl[i];
       }
