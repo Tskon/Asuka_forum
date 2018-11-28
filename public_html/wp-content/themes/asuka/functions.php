@@ -43,9 +43,8 @@ add_action('widgets_init', 'asuka_widgets_init');
 
 
 // передача переменных в js
-wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js');
+wp_enqueue_script('slider', get_template_directory_uri() . '/js/main.js');
 
-// запрос
 $wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 10));
 $dataToBePassed = array(
   'wp' => $wpb_all_query,
@@ -63,4 +62,13 @@ while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post();
   $i++;
 endwhile;
 
-wp_localize_script('main', 'indexSlidesFromWP', $dataToBePassed);
+wp_localize_script('slider', 'indexSlidesFromWP', $dataToBePassed);
+
+if( $locations && isset($locations[ 'header_menu' ]) ){
+  wp_enqueue_script('mainMenu', get_template_directory_uri() . '/js/main.js');
+
+  $menu = wp_get_nav_menu_object( $locations[ 'header_menu' ] );
+  $menuItems = wp_get_nav_menu_items($menu);
+
+  wp_localize_script('mainMenu', 'MainMenuFromWP', $menuItems);
+}

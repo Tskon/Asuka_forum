@@ -1,5 +1,5 @@
 import Vue from 'vue/dist/vue.esm.js';
-console.log(indexSlidesFromWP.wp)
+
 const vm = new Vue({
   el: document.getElementById('jsAsukaSlider'),
   data: {
