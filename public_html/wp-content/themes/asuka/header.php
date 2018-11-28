@@ -15,19 +15,22 @@
       <span class="logo__title">Asuka</span>
     </a>
 
-    <?php if (has_nav_menu('header_menu')) : ?>
-      <nav class="mainMenu" role="navigation">
-        <?php
-        wp_nav_menu(array(
-          'theme_location' => 'header_menu',
-          'menu_class' => '',
-          'depth' => 1,
-        ));
-        ?>
-        <button class="mainMenu__burgerBtn">Меню</button>
-      </nav>
-    <?php endif; ?>
+    <nav class="mainMenu"></nav>
 
   </header>
 </div>
 <main class="indexPage">
+
+
+<!--    --><?php //if (has_nav_menu('header_menu')) : ?>
+<!--      <nav class="mainMenu" role="navigation">-->
+<!--        --><?php
+//        wp_nav_menu(array(
+//          'theme_location' => 'header_menu',
+//          'menu_class' => '',
+//          'depth' => 1,
+//        ));
+//        ?>
+<!--        <button class="mainMenu__burgerBtn">Меню</button>-->
+<!--      </nav>-->
+<!--    --><?php //endif; ?>
