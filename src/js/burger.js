@@ -1,20 +1,38 @@
-(function () {
+import Vue from 'vue/dist/vue.esm.js';
 
-  setTimeout(() => {
-    const burgerBtn = document.querySelector('.mainMenu__burgerBtn');
-    const menu = document.querySelector('.menu-main-menu-container');
+let mainMenuFromWP = [];
+try {
+  if (MainMenuFromWP.length) {
+    mainMenuFromWP = MainMenuFromWP;
+    console.log(mainMenuFromWP)
+  }
+} catch (e) {
+  // console.log(e.message)
+}
 
-    if (burgerBtn && menu) {
-      burgerBtn.addEventListener('click', e => {
-        menu.classList.toggle('menu-main-menu-container--show');
-      })
+new Vue({
+  el: document.querySelector(".mainMenu"),
+  data: {
+    menuList: mainMenuFromWP,
+    isOpen: false,
+    isBurger: false
+  },
+  methods: {
+    isActive(url){
+      console.log(url, location.href)
+      if (url === location.href || url === location.pathname) return 'active';
     }
+  },
+  template: `
+<ul class="mainMenu">
+  <li class="menu-item" 
+    v-for="item in menuList"
+    :class="isActive(item.url)"
+    >
+    <a :href="item.url">{{ item.title }}</a>
+  </li>  
+</ul>
+  `
+});
 
-    try {
-      console.log(MainMenuFromWP);
-    } catch (e) {
-      console.log(e.message)
-    }
 
-  }, 100);
-}());
