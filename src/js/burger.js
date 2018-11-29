@@ -14,11 +14,17 @@ new Vue({
   data: {
     menuList: mainMenuFromWP,
     isOpen: false,
-    isBurger: false
+    isBurger: false,
+    windowWidth: window.innerWidth
   },
   methods: {
     isActive(url){
       if (url === location.href || url === location.pathname) return 'active';
+    }
+  },
+  mounted(){
+    windiw.onResize = () => {
+      this.windowWidth = window.innerWidth;
     }
   },
   template: `
