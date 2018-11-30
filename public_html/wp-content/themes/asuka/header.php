@@ -21,16 +21,15 @@
 </div>
 <main class="indexPage">
 
+<?php
+$locations = get_nav_menu_locations();
 
-<!--    --><?php //if (has_nav_menu('header_menu')) : ?>
-<!--      <nav class="mainMenu" role="navigation">-->
-<!--        --><?php
-//        wp_nav_menu(array(
-//          'theme_location' => 'header_menu',
-//          'menu_class' => '',
-//          'depth' => 1,
-//        ));
-//        ?>
-<!--        <button class="mainMenu__burgerBtn">Меню</button>-->
-<!--      </nav>-->
-<!--    --><?php //endif; ?>
+if( $locations && isset($locations[ 'header_menu' ]) ){
+  wp_enqueue_script('mainMenu', get_template_directory_uri() . '/js/main.js');
+
+  $menu = wp_get_nav_menu_object( $locations[ 'header_menu' ] );
+  $menuItems = wp_get_nav_menu_items($menu, array());
+
+  wp_localize_script('mainMenu', 'MainMenuFromWP', $menuItems);
+}
+?>

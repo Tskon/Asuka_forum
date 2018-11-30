@@ -38,16 +38,3 @@
     </div>
   <?php endif; ?>
 </main>
-
-<?php
-$locations = get_nav_menu_locations();
-
-if( $locations && isset($locations[ 'header_menu' ]) ){
-  wp_enqueue_script('mainMenu', get_template_directory_uri() . '/js/main.js');
-
-  $menu = wp_get_nav_menu_object( $locations[ 'header_menu' ] );
-  $menuItems = wp_get_nav_menu_items($menu, array());
-
-  wp_localize_script('mainMenu', 'MainMenuFromWP', $menuItems);
-}
-?>
