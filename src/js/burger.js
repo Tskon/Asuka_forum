@@ -2,8 +2,8 @@ import Vue from 'vue/dist/vue.esm.js';
 
 let mainMenuFromWP = [];
 try {
-  if (MainMenuFromWP.length) {
-    mainMenuFromWP = MainMenuFromWP;
+  if (dataFromWP.mainMenu.length) {
+    mainMenuFromWP = dataFromWP.mainMenu;
   }
 } catch (e) {
   // console.log(e.message)
@@ -23,7 +23,7 @@ new Vue({
     }
   },
   mounted(){
-    windiw.onResize = () => {
+    window.onResize = () => {
       this.windowWidth = window.innerWidth;
     }
   },

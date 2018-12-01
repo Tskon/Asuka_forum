@@ -22,6 +22,27 @@
 <main class="indexPage">
 
 <?php
+
+// передача переменных в js
+wp_enqueue_script('dataFromWP', get_template_directory_uri() . '/js/main.js');
+
+$wpb_all_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 10));
+$dataToBePassed = array(
+  'wp' => $wpb_all_query,
+  'imgUrl' => array()
+);
+
+$i = 0;
+while ($wpb_all_query->have_posts()) : $wpb_all_query->the_post();
+  $thumbnail_attributes = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full'); // возвращает массив параметров миниатюры
+  if ($thumbnail_attributes[0]):
+    $dataToBePassed['imgUrl'][$i] = $thumbnail_attributes[0];
+  else:
+    $dataToBePassed['imgUrl'][$i] = "";
+  endif;
+  $i++;
+endwhile;
+
 $locations = get_nav_menu_locations();
 
 if( $locations && isset($locations[ 'header_menu' ]) ){
@@ -30,6 +51,10 @@ if( $locations && isset($locations[ 'header_menu' ]) ){
   $menu = wp_get_nav_menu_object( $locations[ 'header_menu' ] );
   $menuItems = wp_get_nav_menu_items($menu, array());
 
-  wp_localize_script('mainMenu', 'MainMenuFromWP', $menuItems);
+  $dataToBePassed['mainMenu'] = $menuItems;
+
+//  wp_localize_script('mainMenu', 'MainMenuFromWP', $menuItems);
 }
+
+wp_localize_script('dataFromWP', 'dataFromWP', $dataToBePassed);
 ?>
