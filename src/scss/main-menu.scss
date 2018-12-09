@@ -46,6 +46,34 @@
 }
 
 @media all and (max-width: 650px) {
+  .mainMenu__list{
+    position: absolute;
+    background-color: $dark-grey;
+    top: 156px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    li{
+      height: 50px !important;
+      line-height: 50px !important;
+      width: 100%;
+      &:after{
+        display: none;
+      }
+    }
+    li.active{
+      background-color: $orange;
+      a{
+        line-height: 50px !important;
+      }
+      a:after, a:before{
+        display: none !important;
+      }
+    }
+  }
+
   .mi-burger {
     position: relative;
     width: 100px;
@@ -59,7 +87,6 @@
     cursor: pointer;
     transition: .2s ease-in-out !important;
   }
-
 
   .mi-burger span {
     position: absolute;

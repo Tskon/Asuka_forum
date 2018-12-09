@@ -32,6 +32,8 @@ new Vue({
     burgerClick(){
       this.htx = !this.htx;
       this.isOpen = !this.isOpen;
+      document.body.style.overflow = (this.isOpen) ? 'hidden' : '';
+
     }
   },
   mounted() {
@@ -48,7 +50,9 @@ new Vue({
     @click="burgerClick">
       <span>htx</span>
     </div>
-    <ul v-if="isBurger && isOpen">
+    <ul 
+      class="mainMenu__list"
+      v-if="isBurger && isOpen">
       <li class="menu-item" 
         v-for="item in menuList"
         :class="isActive(item.url)"
