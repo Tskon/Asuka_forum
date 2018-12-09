@@ -14,18 +14,25 @@ new Vue({
   data: {
     menuList: mainMenuFromWP,
     isOpen: false,
-    isBurger: false,
     windowWidth: window.innerWidth
+  },
+  computed: {
+    isBurger(){
+      return this.windowWidth < 600;
+    }
   },
   methods: {
     isActive(url){
       if (url === location.href || url === location.pathname) return 'active';
-    }
-  },
-  mounted(){
-    window.onResize = () => {
+    },
+    getWidth(){
       this.windowWidth = window.innerWidth;
     }
+  },
+  mounted() {
+    window.addEventListener('resize', e => {
+      this.getWidth();
+    });
   },
   template: `
     <ul class="mainMenu">
