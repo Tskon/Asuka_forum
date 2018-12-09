@@ -51,7 +51,7 @@ new Vue({
     </div>
     <ul 
       class="mainMenu__list"
-      v-if="isBurger && isOpen">
+      v-if="!isBurger || isOpen">
       <li class="menu-item" 
         v-for="item in menuList"
         :class="isActive(item.url)"

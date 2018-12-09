@@ -80,9 +80,7 @@
     width: 70px;
     height: 70px;
     background: #fff;
-    border: 1px solid #eee;
     font-size: 0;
-    border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 3px 5px rgba(0,0,0,.15);;
     cursor: pointer;
@@ -127,9 +125,6 @@
         transition: transform .15s, width .15s, bottom .15s;
       }
     }
-    &.active {
-      //background: $orange;
-    }
     &.active span {
       transform: rotate(180deg);
       &::before,
@@ -144,6 +139,9 @@
         bottom: 0;
         transform: translateX(-6px) translateY(-3px) rotate(45deg);
       }
+    }
+    &:hover{
+      background-color: darken($orange, 10%);
     }
   }
 }
