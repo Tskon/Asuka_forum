@@ -24,7 +24,14 @@ new Vue({
   },
   methods: {
     isActive(url) {
-      if (url === location.href || url === location.pathname) return 'active';
+      if (url === location.pathname) {
+        return 'active';
+      } else if(location.href.includes(url) && url !== '/' && location.href !== 'https://eva-wows.ru/forum/forum-group/verbovochnyj-punkt/'){
+        console.log(url)
+        return 'active';
+      } else if(url === '/forum/forum-group/verbovochnyj-punkt/' && location.href.includes(url)){
+        return 'active';
+      }
     },
     getWidth() {
       this.windowWidth = window.innerWidth;

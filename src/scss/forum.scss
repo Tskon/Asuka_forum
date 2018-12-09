@@ -6,6 +6,20 @@
   }
 }
 
-#prime-forum .prime-forum-description{
+#prime-forum .prime-post, #prime-forum .prime-forum-item{
+  background-color: $white !important;
+}
+
+#prime-forum .prime-parent-box .prime-item-label span{
+  background-color: $orange !important;
   color: $white !important;
+  &:after{
+    border-color: transparent transparent $orange $orange !important;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .prime-forum-header{
+    flex-direction: column;
+  }
 }
