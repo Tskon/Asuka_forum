@@ -32,8 +32,7 @@ new Vue({
     burgerClick(){
       this.htx = !this.htx;
       this.isOpen = !this.isOpen;
-      document.body.style.overflow = (this.isOpen) ? 'hidden' : '';
-
+      document.body.style.overflowY = (this.isOpen) ? 'hidden' : '';
     }
   },
   mounted() {
