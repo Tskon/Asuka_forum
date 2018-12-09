@@ -6,7 +6,7 @@ try {
     mainMenuFromWP = dataFromWP.mainMenu;
   }
 } catch (e) {
-  // console.log(e.message)
+  console.log(e.message)
 }
 
 new Vue({
@@ -14,19 +14,24 @@ new Vue({
   data: {
     menuList: mainMenuFromWP,
     isOpen: false,
-    windowWidth: window.innerWidth
+    windowWidth: window.innerWidth,
+    htx: false
   },
   computed: {
-    isBurger(){
-      return this.windowWidth < 600;
+    isBurger() {
+      return this.windowWidth < 650;
     }
   },
   methods: {
-    isActive(url){
+    isActive(url) {
       if (url === location.href || url === location.pathname) return 'active';
     },
-    getWidth(){
+    getWidth() {
       this.windowWidth = window.innerWidth;
+    },
+    burgerClick(){
+      this.htx = !this.htx;
+      this.isOpen = !this.isOpen;
     }
   },
   mounted() {
@@ -35,7 +40,15 @@ new Vue({
     });
   },
   template: `
-    <ul class="mainMenu">
+   <nav class="mainMenu">
+    <div 
+    v-if="isBurger"
+    class="mi-burger mi-burger--htra" 
+    :class="{ active: htx }" 
+    @click="burgerClick">
+      <span>htx</span>
+    </div>
+    <ul v-if="isBurger && isOpen">
       <li class="menu-item" 
         v-for="item in menuList"
         :class="isActive(item.url)"
@@ -43,7 +56,6 @@ new Vue({
         <a :href="item.url">{{ item.title }}</a>
       </li>  
     </ul>
+  </nav>
   `
 });
-
-

@@ -14,9 +14,7 @@
       <div class="logo__img">&nbsp</div>
       <span class="logo__title">Asuka</span>
     </a>
-
     <nav class="mainMenu"></nav>
-
   </header>
 </div>
 <main class="indexPage">
