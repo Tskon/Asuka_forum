@@ -1,15 +1,15 @@
 <div id="topic-post-<?php pfm_post_field('post_id'); ?>" class="<?php pfm_the_post_classes(); ?>">
-    <div class="prime-topic-left">
+    <div class="prime-topic-left lololo">
 
         <?php pfm_the_author_manager(); ?>
 
         <div class="prime-author-avatar">
             <?php if(pfm_post_field('user_id',0)): ?>
-            <a href="<?php echo get_author_posts_url(pfm_post_field('user_id',0)); ?>" title="<?php _e('To personal account','wp-recall'); ?>">
-                <?php pfm_author_avatar(); ?>
+            <a class="lol" href="<?php echo get_author_posts_url(pfm_post_field('user_id',0)); ?>" title="<?php _e('To personal account','wp-recall'); ?>">
+                <?php pfm_author_avatar(300); ?>
             </a>
             <?php else: ?>
-                <?php pfm_author_avatar(); ?>
+                <?php pfm_author_avatar(300); ?>
             <?php endif; ?>
         </div>
         <div class="prime-author-metabox">

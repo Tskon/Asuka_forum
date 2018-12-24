@@ -2,7 +2,7 @@
     <?php pfm_the_topic_manager(); ?>
 	<?php 
 		global $PrimeTopic;
-		echo '<a class="prime-forum-modern-avatar" href="'.get_author_posts_url($PrimeTopic->user_id).'">'.get_avatar($PrimeTopic->user_id, 64 ).'</a>'; 
+		echo '<a class="prime-forum-modern-avatar" href="'.get_author_posts_url($PrimeTopic->user_id).'">'.get_avatar($PrimeTopic->user_id, 300 ).'</a>';
 	?>
     <div class="prime-forum-title">
         <div class="prime-general-title"><?php pfm_the_forum_icons(); ?><a class="" title="<?php _e('Go to topic','wp-recall'); ?>" href="<?php pfm_the_topic_permalink(); ?>"><?php pfm_the_topic_name(); ?></a></div>
