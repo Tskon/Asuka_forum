@@ -24,7 +24,15 @@
   }
 }
 
-#prime-forum a{
+.prime-post-content a{
   text-decoration: underline!important;
   color: $orange;
+}
+
+.u{
+  text-decoration: underline!important;
+}
+
+.o{
+  color: $orange!important;
 }
