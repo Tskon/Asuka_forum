@@ -4,9 +4,17 @@
 @import "forum";
 @import "main-menu";
 @import "vue-animations";
+@import url('https://fonts.googleapis.com/css?family=Cuprum|Open+Sans');
 
 *, *:before, *:after{
   box-sizing: border-box;
+}
+
+.header, .indexPage{
+  font-family: 'Open Sans', sans-serif;
+  h1, h2, h3, h4, h5, h6, .logo__title{
+    font-family: 'Cuprum', sans-serif;
+  }
 }
 
 body{
